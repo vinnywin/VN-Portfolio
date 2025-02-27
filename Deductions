@@ -1,5 +1,5 @@
-salary = 60000
-numDependents = 3
+salary = 30000
+numDependents = 6
 
 stateTaxRate = 0.065
 stateTax = salary * stateTaxRate

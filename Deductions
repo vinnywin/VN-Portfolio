@@ -1,0 +1,29 @@
+salary = 60000
+numDependents = 3
+
+# Calculate state withholding tax
+stateTaxRate = 0.065
+stateTax = salary * stateTaxRate
+
+# Calculate federal withholding tax
+federalTaxRate = 0.28
+federalTax = salary * federalTaxRate
+
+# Calculate dependent deductions
+dependentDeductionRate = 0.025
+dependentDeduction = salary * dependentDeductionRate * numDependents
+
+# Calculate total withholding
+totalWithholding = stateTax + federalTax + dependentDeduction
+
+# Calculate take-home pay
+takeHomePay = salary - totalWithholding
+
+# Print the results
+print("State Tax: $", stateTax)
+print("Federal Tax: $", federalTax)
+print("Dependents: $", dependentDeduction)
+print("salary: $", salary)
+print("Total Withholding: $", totalWithholding)
+print("Take-Home Pay: $", takeHomePay)
+print("20250227_NguyenViet_2-4")

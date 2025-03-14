@@ -20,9 +20,9 @@ def checkInput(input, input_type):
 # User Input
 while True:
     numChar = input("How many characters would you like on your sign? ")
-    validation_message = checkInput(numChar, "numChar")
-    if validation_message:
-        print(validation_message)
+    message = checkInput(numChar, "numChar")
+    if message:
+        print(message)
         continue
     
     numChar = int(numChar)
@@ -30,17 +30,17 @@ while True:
 
 while True:
     woodType = input("What type of wood would you like? ")
-    validation_message = checkInput(woodType, "woodType")
-    if validation_message:
-        print(validation_message)
+    message = checkInput(woodType, "woodType")
+    if message:
+        print(message)
         continue
     break
 
 while True:
     color = input("What color would you like? ")
-    validation_message = checkInput(color, "color")
-    if validation_message:
-        print(validation_message)
+    message = checkInput(color, "color")
+    if message:
+        print(message)
         continue
     break
 
@@ -62,3 +62,4 @@ if woodType == "oak":
 
 # Output
 print("The charge for this sign is $" + str(charge))
+print("20250313_NguyenViet_4-1")

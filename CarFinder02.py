@@ -4,12 +4,20 @@ AllowedVehiclesList = [ 'Ford F-150', 'Chevrolet Silverado', 'Tesla CyberTruck',
 #Function to display the menu
 def display_menu():
     print("********************************")
-    print("AutoCountry Vehicle Finder v0.1")
+    print("AutoCountry Vehicle Finder v0.2")
     print("********************************")
     print("Please enter the number below from the following menu:")
     print("1. PRINT all Authorized Vehicles")
-    print("2. Exit")
-    print("20250407_NguyenViet_Project0-1")
+    print("2. SEARCH for a Vehicle")
+    print("3. Exit")
+    print("20250407_NguyenViet_Project0-2")
+
+#Function to search for a vehicle
+def search_vehicle(vehicle_name):
+    if vehicle_name in AllowedVehiclesList:
+        print(f"Yes, the {vehicle_name} is authorized for purchase and selling!")
+    else:
+        print(f"Sorry, the {vehicle_name} is not on the authorized list.")
 
 #Main program loop
 def main():
@@ -23,11 +31,15 @@ def main():
                 print(vehicle)
             print("\n")
         elif choice == "2":
+            vehicle_name = input("Enter the name of the vehicle to search: ")
+            search_vehicle(vehicle_name)
+            print("\n")
+        elif choice == "3":
             print("Thank you for using the AutoCountry Vehicle Finder, good-bye!")
             break
         else:
-            print("Invalid input. Please enter 1 or 2.")
+            print("Invalid input. Please enter 1, 2, or 3.")
 
 #Run the program
 main()
-print("20250407_NguyenViet_Project0-1")
+print("20250407_NguyenViet_Project0-2")

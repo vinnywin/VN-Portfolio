@@ -15,9 +15,9 @@ def display_menu():
 #Function to search for a vehicle
 def search_vehicle(vehicle_name):
     if vehicle_name in AllowedVehiclesList:
-        print(f"Yes, the {vehicle_name} is authorized for purchase and selling!")
+        print(f"{vehicle_name} is an authorized vehicle.")
     else:
-        print(f"Sorry, the {vehicle_name} is not on the authorized list.")
+        print(f"{vehicle_name} is not an authorized vehicle, if you received this in error please check the spelling and try")
 
 #Main program loop
 def main():

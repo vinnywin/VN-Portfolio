@@ -11,7 +11,7 @@ def display_menu():
     print("2. SEARCH for a Vehicle")
     print("3. ADD a Vehicle to the Authorized List")
     print("4. Exit")
-    print("20250407_NguyenViet_Project0-2")
+    print("20250414_NguyenViet_Project0-2")
 
 # Function to search for a vehicle
 def search_vehicle(vehicle_name):
@@ -55,4 +55,4 @@ def main():
 
 # Run the program
 main()
-print("20250407_NguyenViet_Project0-2")
+print("20250414_NguyenViet_Project0-2")

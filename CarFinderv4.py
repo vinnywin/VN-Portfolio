@@ -10,7 +10,7 @@ def display_menu():
     print("1. PRINT all Authorized Vehicles")
     print("2. SEARCH for a Vehicle")
     print("3. ADD Authorized Vehicle")
-    print("4. Delete Authorized Vehicle")
+    print("4. DELETE Authorized Vehicle")
     print("5. Exit")
     print("20250414_NguyenViet_Project0-4")
 
@@ -33,7 +33,7 @@ def add_vehicle(vehicle_name):
 def remove_vehicle(vehicle_name):
     if vehicle_name in AllowedVehiclesList:
         AllowedVehiclesList.remove(vehicle_name)
-        print(f"You have removed '{vehicle_name}' from the authorized list.")
+        print(f"You have REMOVED '{vehicle_name}' as an authorized vehicle.")
     else:
         print(f"{vehicle_name} is not in the authorized list, so it cannot be removed.")
 
@@ -61,15 +61,15 @@ def main():
                 print(vehicle)
             print("\n")
         elif choice == "2":
-            vehicle_name = input("Enter the name of the vehicle to search: ")
+            vehicle_name = input("Enter the name of the vehicle to SEARCH: ")
             search_vehicle(vehicle_name)
             print("\n")
         elif choice == "3":
-            vehicle_name = input("Please Enter the full Vehicle name you would like to add: ")
+            vehicle_name = input("Please Enter the full Vehicle name you would like to ADD: ")
             add_vehicle(vehicle_name)
             print("\n")
         elif choice == "4":
-            vehicle_name = input("Please Enter the full Vehicle name you would like to remove: ")
+            vehicle_name = input("Please Enter the full Vehicle name you would like to REMOVE: ")
             remove_vehicle(vehicle_name)
             print("\n")
         elif choice == "5":

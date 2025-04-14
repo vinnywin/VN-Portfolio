@@ -4,7 +4,7 @@ AllowedVehiclesList = ['Ford F-150', 'Chevrolet Silverado', 'Tesla CyberTruck', 
 # Function to display the menu
 def display_menu():
     print("********************************")
-    print("AutoCountry Vehicle Finder v0.2")
+    print("AutoCountry Vehicle Finder v0.3")
     print("********************************")
     print("Please enter the number below from the following menu:")
     print("1. PRINT all Authorized Vehicles")

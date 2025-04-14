@@ -26,7 +26,7 @@ def add_vehicle(vehicle_name):
         print(f"{vehicle_name} is already in the authorized list.")
     else:
         AllowedVehiclesList.append(vehicle_name)
-        print(f"{vehicle_name} has been added to the authorized list.")
+        print(f"You have added '{vehicle_name}'as an authorized vehicle.")
 
 # Main program loop
 def main():
